@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import UserInput from './user-input';
-import UserAnswer from './user-answer';
-import LettersGuessed from './letters-guessed';
-import validateInputCharacter from './validation';
-import ResetButton from './reset-button';
-import HangmanImages from './hangman-img';
-import getWord from './parse';
+import UserInput from './components/user-input';
+import UserAnswer from './components/user-answer';
+import LettersGuessed from './components/letters-guessed';
+import validateInputCharacter from './utilities/validation';
+import ResetButton from './components/reset-button';
+import HangmanImages from './components/hangman-img';
+import getWord from './utilities/parse';
 import './App.css';
 
 

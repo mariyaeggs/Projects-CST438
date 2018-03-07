@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './App.css';
+import '../App.css';
 
 const imageMap = [
   'https://farm5.staticflickr.com/4608/38850375390_1223991b0e_q.jpg',
