@@ -1,5 +1,5 @@
 /**
- * @file Manages the configuration settings for the widget.
+ * @file Manages the word list for the hangman game
  */
 
 const wordArray = [
