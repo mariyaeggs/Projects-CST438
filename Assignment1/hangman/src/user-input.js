@@ -1,21 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import './App.css';
 
-class UserInput extends Component {
-    render() {
-        return(
-            <form onSubmit={ this.props.userSubmitHandler} >
-              <label>
-                <input
-                  type="text"
-                  value={ this.props.inputValue }
-                  onChange={ this.props.userInputHandler }
-                />
-              </label>
-              <input type="submit" value="Guess" />
-            </form>
-        )
-    }
-}
+const UserInput = props => (
+  <form onSubmit={props.userSubmitHandler} >
+    <label>
+      <input
+        type="text"
+        value={props.inputValue}
+        onChange={props.userInputHandler}
+      />
+    </label>
+    <input type="submit" value="Guess" disabled={props.disableInput} />
+  </form>
+);
+
+UserInput.propTypes = {
+  userSubmitHandler: PropTypes.func.isRequired,
+  inputValue: PropTypes.string.isRequired,
+  userInputHandler: PropTypes.func.isRequired,
+  disableInput: PropTypes.func.isRequired,
+};
 
 export default UserInput;
